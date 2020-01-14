@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>gallery page</title>
+</head>
+<body>
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <img src="{% static  'images/IMG_20190727_140343_HDR.jpg' %}" style="width: 50%;height:50%">
+    </div>
+    <div class="col-md-6">
+        <img src="{% static 'images/IMG_20190727_141615_HDR.jpg' %}" style="width: 50%;height:50%" >
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-6">
+             <img src="{% static 'images/IMG_20190727_140318_HDR.jpg' %}" style="width: 50%;height: 50%">
+        </div>
+        <div class="col-md-6">
+             <img src="{% static 'images/IMG_20190727_150124_HDR.jpg' %}" style="width: 50%;height: 50%">
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images\IMG_20190727_145743_HDR.jpg' %}" style="width: 50%;height:50%">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images\IMG_20190727_143258_HDR.jpg' %}" style="width: 50%;height:50%" >
+        </div>
+        </div>
+</div>
+{% endblock %}
+</body>
+</html>

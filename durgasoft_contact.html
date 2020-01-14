@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+<html>
+<head>
+    <title>contact page</title>
+</head>
+<body>
+
+{% block content %}
+    <div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <form method ="POST">
+                {% csrf_token %}
+                {{ eform }}<br>
+                <input type="submit" value="send" class="btn btn-success">
+                <input type="reset" value="clear" class="btn btn-danger">
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+</body>
+</html>
